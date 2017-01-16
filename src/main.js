@@ -9,6 +9,7 @@ import nonPayment from './components/nonPayment'
 import totalAssets from './components/totalAssets'
 import searchResult from './components/searchResult'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
 import VueResource from 'vue-resource'
 
 Vue.use(VueRouter)

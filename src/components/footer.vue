@@ -34,6 +34,8 @@
           </div>
         </div>
      </div>
+
+
      <div class="row">
        <div class="col-lg-12 col-md-12">
               <div class="row about">
@@ -82,6 +84,8 @@
             </div>
      </div>
 
+
+
   </div>
 </template>
 
@@ -91,8 +95,8 @@ export default {}
 
 <style lang="css">
 .foot-top{
-  padding: 20px 0;
-  margin:0;
+  padding: 80px 90px;
+  margin:0 auto;
   border-bottom: 1px solid #e2e2e2
 }
 .bg-blue{
@@ -101,7 +105,6 @@ export default {}
   height:50px;
   display:inline-block;
   border-radius: 6px;
-
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -131,14 +134,27 @@ export default {}
 .bg-li{
     background:url(../assets/ver-line2.png) right center no-repeat;
 }
-.foot-type{font-size:22px;font-weight:600;line-height:1;padding-bottom:5px}
+.foot-type{
+  font-size:18px;
+  font-weight:600;
+  line-height:1;
+  padding-bottom:5px;
+  font-family: "微软雅黑"
+}
 .foot-des{
-  font-size:20px;color:#5f5f5f;line-height:1
+  font-size:16px;
+  color:#5f5f5f;
+  line-height:1;
+    font-family: "微软雅黑"
 }
 .list-unstyled>li{
 width:100%;
 padding-left:75px;
 text-align: left;
+}
+.list-unstyled a:hover{
+  color: #009cff!important;
+  text-decoration: none;
 }
 .text-color{
   color:#666 !important
@@ -149,4 +165,8 @@ text-align: left;
 .text-type2{
   font-family: "黑体"
 }
+.about{
+  margin: 37px 0 60px 0;
+}
+
 </style>

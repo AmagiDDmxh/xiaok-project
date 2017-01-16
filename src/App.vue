@@ -12,6 +12,9 @@
     <div style="min-width:1200px;width:1200px;margin:20px auto 0">
       <foot></foot>
     </div>
+    <div class="footer-link">
+
+    </div>
   </div>
 </div>
 </template>
@@ -188,5 +191,10 @@ ul>li>.menu {
 
 .text-type2 {
   font-family: "黑体"
+}
+.footer-link{
+  background: #000;
+  height: 135px;
+  border-top: 5px solid #009cff;
 }
 </style>

@@ -3,19 +3,26 @@
     <div class="row">
       <div class="col-sm-12 col-lg-12">
         <div id="myCarousel" class="carousel slide">
-
+          <!-- 轮播（Carousel）指标 -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
           <!-- 轮播（Carousel）项目 -->
           <div class="carousel-inner">
-              <img class="item active" src="http://www.runoob.com/wp-content/uploads/2014/07/slide1.png" alt="First slide">
-              <div class="item " v-for="index,img in imgs">
-              </div>
+              <img class="item active" src="../assets/slide1.png" alt="蓝鲸淘">
+              <img class="item " src="../assets/slide2.png" alt="蓝鲸淘">
+              <img class="item " src="../assets/slide3.png" alt="蓝鲸淘">
           </div>
           <!-- 轮播（Carousel）导航 -->
           <a class="carousel-control left" href="#myCarousel"
-              data-slide="prev">&lsaquo;
+              data-slide="prev">
+              <img style="margin-top:-10px;width:52px;" src="../assets/banner-left.png" alt="" />
           </a>
           <a class="carousel-control right" href="#myCarousel"
-              data-slide="next">&rsaquo;
+              data-slide="next">
+              <img style="margin-top:-10px;width:52px;" src="../assets/banner-right.png" alt="" />
           </a>
         </div>
       </div>
@@ -56,11 +63,7 @@
 export default {
   data () {
     return {
-      imgs: [
-        'http://www.runoob.com/wp-content/uploads/2014/07/slide1.png',
-        'http://www.runoob.com/wp-content/uploads/2014/07/slide2.png',
-        'http://www.runoob.com/wp-content/uploads/2014/07/slide3.png'
-      ]
+
     }
   },
   methods: {
@@ -71,13 +74,13 @@ export default {
 <style lang="css">
 .carousel-control{
   background: #8e8e8e;
-  height: 114px;
-  line-height: 114px;
+  height: 100px;
+  line-height: 100px;
   font-size: 50px!important;
   width: 51px!important;
   margin-top: 140px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
-  background-image: url('../assets/banner-left.png') no-repeat;
+  background-image: none;
 }
 
 .carousel-inner img{
@@ -105,8 +108,7 @@ export default {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: #000;
-    opacity: 0.3;
+    cursor:pointer;
 }
 
 .content-2 p{
@@ -130,9 +132,7 @@ export default {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: #000;
-    opacity: 0.3;
-    box-shadow: 5px 5px 5px #000;
+    cursor:pointer;
 }
 
 </style>
