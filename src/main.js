@@ -8,6 +8,7 @@ import index from './components/index'
 import nonPayment from './components/nonPayment'
 import totalAssets from './components/totalAssets'
 import searchResult from './components/searchResult'
+import offlineWallet from './components/offlineWallet'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 import VueResource from 'vue-resource'
@@ -32,6 +33,9 @@ const routes = [{
 }, {
   path: '/searchResult',
   component: searchResult
+}, {
+  path: '/offlineWallet',
+  component: offlineWallet
 }]
 
 const router = new VueRouter({
